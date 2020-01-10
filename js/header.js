@@ -19,6 +19,20 @@ $(document).ready(function() {
   $('.test').click(function() {
   	  $(this).toggleClass('bg');
   })
+
+    var counter = 0;
+    $('.test').click(function() {
+  	  $(this).toggleClass('substract');
+
+	  if($(this).hasClass('substract')) {
+	  	  counter++
+		  console.log(counter)
+	  } else {
+	  	  counter--
+		  console.log(counter)
+	  }
+  })
+
   
   // On scroll, remove class on active element and add it to the new one
   
@@ -50,6 +64,19 @@ if (test = 0){
   function switch_color1() {
   document.getElementsByClassName("test")[0].style.display = "flex";
   }
-   function switch_color2() {
-  document.getElementsByClassName("test")[0].style.display = "none";
-  }
+ /* var counter = 0;
+  $(".counter").text(counter);
+
+  $(".add").click(function(){
+	counter = counter + 1
+	console.log(counter);
+	$(".counter").text(counter);
+	});
+
+$(".substract").click(function(){
+  counter = counter - 1;
+  console.log(counter);
+  $(".counter").text(counter);
+});
+*/
+

@@ -32,6 +32,7 @@ h3 {
 	border-radius: var(--spacing-l);
 	background-color: rgba(29, 230, 29, 0);
 	transition-duration: 0.2s;
+	cursor: pointer;
 }
 .bg {
 background-color: rgba(29, 230, 29, 0.7);
